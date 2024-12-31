@@ -183,7 +183,8 @@ header, footer {
 
 /* Button styles */
 .buttons button {
-    background: linear-gradient(135deg, #53565a, #eedee0); /* Gradient background */
+    /* background: linear-gradient(135deg, #53565a, #eedee0);  */
+    background: linear-gradient(135deg, #9a9ea3, #eedee0); 
     color: #501c1c; /* Dark wine red text color */
     border: none;
     border-radius: 20px;
@@ -230,7 +231,7 @@ position: relative; /* Ensure proper stacking context for children */
     display: inline-block; /* Makes sure the link area matches the image size */
     margin: 10px 10px;
     position: relative; /* Ensures no overlapping issues */
-    z-index: 10; /* Brings the icon to the front */
+    /* z-index: 10;  */
 }
 
 .social-icon {
@@ -260,6 +261,25 @@ transform: scale(1.1); /* Zoom effect when hovering over the link */
   }
 }
 
+.left-modal-close-button {
+  position:relative;
+  right:-40%;
+  width:2rem;
+}
+
+.left-modal-close-button *, .right-modal-close-button *{
+  text-align: center;
+  padding-top: 6%;
+}
+
+.right-modal-close-button {
+  position:relative;
+  right:40%;
+  width:2rem;
+}
+
+
+
 
 /*Media queries for responsiveness */
 
@@ -286,3 +306,6 @@ transform: scale(1.1); /* Zoom effect when hovering over the link */
       height: 80px;
     }
   }
+
+
+
