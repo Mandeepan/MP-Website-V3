@@ -58,7 +58,6 @@
 
 @media (max-width: 480px) {
     .screenshot-box{
-        border: #ffae00 1px solid;
         min-width:20rem;
         min-height: 8rem;
         width:90%;
