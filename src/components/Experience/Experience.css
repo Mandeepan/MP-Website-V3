@@ -15,8 +15,8 @@
 
 .section-container > .header, .paragraph{
     text-align: left;
-    width:100%;
-    margin: 1.2rem;
+    width:90%;
+    margin: 1% 5%;
     padding:0 3rem;
 }
 
@@ -46,11 +46,16 @@
 .section-row-container{
     display: flex;
     flex-direction: row;
-    justify-content:left;
+    justify-content:flex-start;
     text-align: left;
-    width:100%;
-    margin: 1.2rem ;
+    width:90%;
+    margin: 1% 5%;
     padding:0 3rem;
+}
+
+.section-row-container:hover{
+    background-color: rgba(60, 35, 14, 0.716);
+    background-blend-mode: luminosity;
 }
 
 .timeline-box{
@@ -60,17 +65,19 @@
 
 .timeline-box *{   
     word-wrap: none;
-    width:50%;
+    min-width:100px;
+    width:15%;
     padding-top:0;
+    flex-shrink: 0
 }
 
 .experience-container{
-    padding: 0;
+    padding: 0!important;
     margin: 0;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items:left;
+    align-items:flex-start;
 }
 
 .experience-title{
@@ -80,6 +87,7 @@
 .experience-container div {
     padding: 0 0 0.5rem 0;
     margin: 0;
+    min-width: 100%;
 }
 
 .experience-paragraph p{

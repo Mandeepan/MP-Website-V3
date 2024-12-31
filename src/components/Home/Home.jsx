@@ -53,7 +53,9 @@ const Home = () => {
             direction="left"
           >
             <Experience />
+            <div className="left-modal-footer-container">
             <button className="left-modal-close-button" onClick={() => setIsExperienceModalOpen(false)}>Back <AiFillCaretRight /></button>
+            </div>
           </Modal>
 
           {/* Projects Modal - Slides from Right */}
@@ -63,7 +65,9 @@ const Home = () => {
             direction="right"
           >
             <Projects />
-            <button className="right-modal-close-button" onClick={() => setIsProjectsModalOpen(false)}><AiFillCaretLeft /> Back</button>
+            <div className="right-modal-footer-container">
+              <button className="right-modal-close-button" onClick={() => setIsProjectsModalOpen(false)}><AiFillCaretLeft /> Back</button>
+            </div>
           </Modal>
         </section>
         <section className="social-links">

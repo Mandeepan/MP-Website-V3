@@ -1,5 +1,11 @@
 import './Experience.css';
 
+const experience0="Completed a rigorous 6-month, full-time software engineering bootcamp, gaining expertise in full-stack web development. Developed scalable web applications using modern technologies such as React, Flask, and SQLAlchemy. Integrated external APIs (e.g., OpenAI, CrunchBase) and AWS S3 for enhanced functionality. Collaborated in teams using Agile methodologies, hosting daily stand-ups, and managing debugging processes."
+const experience1="Structured Asset-Backed Lending (ABL) and Securitization (ABS) facilities to optimize financial operations. Automated compliance reporting using Python and SQL, significantly reducing manual workload. Built Tableau dashboards integrated with Generative AI and sentiment analysis to assess adverse news, mitigating portfolio default risks. Co-led the Treasury team, optimizing capital allocation through liquidity projection and cost analysis."
+const experience2="Developed and implemented a Russell 1000 stock classification system using K-Means Clustering to identify potential trading strategies. Streamlined alpha generation by automating factor capturing, data transformation, and model backtesting, enhancing the efficiency of quantitative analyses."
+const experience3="Conducted due diligence on investment opportunities, back-tested trading strategies, and prepared comprehensive pitch decks for prospective investors. Utilized data-driven insights to support portfolio managers in optimizing fund performance."
+const experience4="Designed and executed algorithmic trading strategies, focusing on optimizing execution efficiency and profitability. Analyzed large datasets to identify trading opportunities and trends. Assisted in developing tools for managing trading risk and improving portfolio performance."
+
 function Experience(){
     return (
         <div className="modal-content-container">
@@ -33,7 +39,14 @@ function Experience(){
                             <p>Software Engineering Full-time Student @ App Academy</p>
                         </div>
                         <div className="experience-paragraph">
-                            <p> learning building flash python app and manage database lbnfjsdnfansfohaspdfkdsjfnhgiupajsndfaijsfdknaslblasdfbashilfjkasdhfibjansbhvasvhiawkvldshaklvhi</p>
+                            <p>{experience0}</p>
+                        </div>
+                        <div className="skill-tabs">
+                            <p>React</p>
+                            <p>Flask</p>
+                            <p>SQLAlchemy</p>
+                            <p>OpenAI API</p>
+                            <p>AWS S3</p>
                         </div>
                     </div>
                 </div>
@@ -47,7 +60,14 @@ function Experience(){
                             <p>Senior Capital Markets Quantitative Manager @ DailyPay</p>
                         </div>
                         <div className="experience-paragraph">
-                            <p> learning building flash python app and manage database lbnfjsdnfansfohaspdfkdsjfnhgiupajsndfaijsfdknaslblasdfbashilfjkasdhfibjansbhvasvhiawkvldshaklvhi</p>
+                            <p>{experience1}</p>
+                        </div>
+                        <div className="skill-tabs">
+                            <p>Python</p>
+                            <p>SQL</p>
+                            <p>Tableau</p>
+                            <p>Generative AI</p>
+                            <p>Google Cloud API</p>
                         </div>
                     </div>
                 </div>
@@ -61,7 +81,15 @@ function Experience(){
                             <p>Quantitative Research @ Quant Global Capital Advisors</p>
                         </div>
                         <div className="experience-paragraph">
-                            <p> learning building flash python app and manage database lbnfjsdnfansfohaspdfkdsjfnhgiupajsndfaijsfdknaslblasdfbashilfjkasdhfibjansbhvasvhiawkvldshaklvhi</p>
+                            <p>{experience2}</p>
+                        </div>
+                        <div className="skill-tabs">
+                            <p>Python</p>
+                            <p>SQL</p>
+                            <p>Machine Learning</p>
+                            <p>Sentiment Analysis</p>
+                            <p>Bloomberg Terminal</p>
+                            <p>S&P IQ Capital</p>
                         </div>
                     </div>
                 </div>
@@ -75,7 +103,14 @@ function Experience(){
                             <p>Finance Analyst @ Acceleration Capital Group</p>
                         </div>
                         <div className="experience-paragraph">
-                            <p> learning building flash python app and manage database lbnfjsdnfansfohaspdfkdsjfnhgiupajsndfaijsfdknaslblasdfbashilfjkasdhfibjansbhvasvhiawkvldshaklvhi</p>
+                            <p>{experience3}</p>
+                        </div>
+                        <div className="skill-tabs">
+                            <p>Python</p>
+                            <p>Excel</p>
+                            <p>Portfolio Analysis</p>
+                            <p>Due Diligence</p>
+                            <p>VaR(Value at Risk)</p>
                         </div>
                     </div>
                 </div>
@@ -89,7 +124,13 @@ function Experience(){
                             <p>Algorithmic Trading Intern @ ARB Group</p>
                         </div>
                         <div className="experience-paragraph">
-                            <p> learning building flash python app and manage database lbnfjsdnfansfohaspdfkdsjfnhgiupajsndfaijsfdknaslblasdfbashilfjkasdhfibjansbhvasvhiawkvldshaklvhi</p>
+                            <p>{experience4}</p>
+                        </div>
+                        <div className="skill-tabs">
+                            <p>R</p>
+                            <p>Python</p>
+                            <p>Excel</p>
+                            <p>Statistical Arbitrage</p>
                         </div>
                     </div>
                 </div>
