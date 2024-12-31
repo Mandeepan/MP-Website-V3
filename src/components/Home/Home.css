@@ -183,7 +183,8 @@ header, footer {
 
 /* Button styles */
 .buttons button {
-    background: linear-gradient(135deg, #53565a, #eedee0); /* Gradient background */
+    /* background: linear-gradient(135deg, #53565a, #eedee0);  */
+    background: linear-gradient(135deg, #9a9ea3, #eedee0); 
     color: #501c1c; /* Dark wine red text color */
     border: none;
     border-radius: 20px;
@@ -230,7 +231,7 @@ position: relative; /* Ensure proper stacking context for children */
     display: inline-block; /* Makes sure the link area matches the image size */
     margin: 10px 10px;
     position: relative; /* Ensures no overlapping issues */
-    z-index: 10; /* Brings the icon to the front */
+    /* z-index: 10;  */
 }
 
 .social-icon {
@@ -260,6 +261,36 @@ transform: scale(1.1); /* Zoom effect when hovering over the link */
   }
 }
 
+.left-modal-footer-container{
+  padding:0;
+  margin-right:4%;
+  margin-left:80%;
+  width:16%;
+
+}
+
+.left-modal-close-button, .right-modal-close-button{ 
+    padding-left: 0!important;
+    padding-right: 0!important;
+    width:98% !important;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-modal-footer-container{
+  padding:0;
+  margin-right:80%;
+  margin-left:4%;
+  width:16%;
+
+}
+
+  
+
+
+
 
 /*Media queries for responsiveness */
 
@@ -286,3 +317,6 @@ transform: scale(1.1); /* Zoom effect when hovering over the link */
       height: 80px;
     }
   }
+
+
+

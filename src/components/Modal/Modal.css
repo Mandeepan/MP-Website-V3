@@ -1,0 +1,66 @@
+.modal-overlay-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+.modal-overlay-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+  
+.modal-content-left {
+  background: #0f0101;
+  width: 100%;
+  height: 100%;
+  margin-left:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  /* border-radius: 0 2rem 2rem 0; */
+  box-shadow: 
+  /* inset 0 0 4em 3em rgba(238, 200, 175, 0.2), */
+  inset 0 0 2em 0.4em rgba(238, 200, 175, 0.2),
+  0 0 0.1em 0.1em rgba(238, 200, 175, 0.2),
+  0 0 1em 0.4em rgba(238, 200, 175, 0.3);
+}
+
+.modal-content-right {
+  background: #0f0101;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  /* border-radius: 2rem  0 0 2rem; */
+  box-shadow: 
+  /* inset 0 0 4em 3em rgba(238, 200, 175, 0.2), */
+  inset 0 0 2em 0.4em rgba(238, 200, 175, 0.2),
+  0 0 0.1em 0.1em rgba(238, 200, 175, 0.2),
+  0 0 1em 0.4em rgba(238, 200, 175, 0.3);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
