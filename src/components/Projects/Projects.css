@@ -17,9 +17,6 @@
     object-fit: cover;
 }
 
-.screenshot-box:hover{
-    border: 2px silver solid;
-}
 
 .skill-tabs{
     display: flex;
@@ -54,6 +51,10 @@
     color: rgb(215, 185, 162);
     filter:none;
 
+}
+
+.github-text{
+    font-size: small;
 }
 
 @media (max-width: 480px) {

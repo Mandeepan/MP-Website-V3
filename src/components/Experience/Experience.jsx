@@ -5,6 +5,7 @@ const experience1="Structured Asset-Backed Lending (ABL) and Securitization (ABS
 const experience2="Developed and implemented a Russell 1000 stock classification system using K-Means Clustering to identify potential trading strategies. Streamlined alpha generation by automating factor capturing, data transformation, and model backtesting, enhancing the efficiency of quantitative analyses."
 const experience3="Conducted due diligence on investment opportunities, back-tested trading strategies, and prepared comprehensive pitch decks for prospective investors. Utilized data-driven insights to support portfolio managers in optimizing fund performance."
 const experience4="Designed and executed algorithmic trading strategies, focusing on optimizing execution efficiency and profitability. Analyzed large datasets to identify trading opportunities and trends. Assisted in developing tools for managing trading risk and improving portfolio performance."
+const experience5="Conducted intra-day discretionary trading on commodity futures and risk analysis."
 
 function Experience(){
     return (
@@ -134,7 +135,73 @@ function Experience(){
                         </div>
                     </div>
                 </div>
+                {/* Experience 5*/}
+                <div className="section-row-container">
+                    <div className="timeline-box">
+                        <p>AUG - OCT 2014</p>
+                    </div>
+                    <div className="experience-container">
+                        <div className="experience-title">
+                            <p>Trading Intern @ Amplify Trading</p>
+                        </div>
+                        <div className="experience-paragraph">
+                            <p>{experience5}</p>
+                        </div>
+                        <div className="skill-tabs">
+                            <p>Excel</p>
+                            <p>Technical Analysis</p>
+                        </div>
+                    </div>
+                </div>
              </div>
+             {/* Education */}
+             <div className="section-container" >
+                <div className='header'>
+                    <h3>EDUCATION</h3>
+                </div>
+                {/* Study Experience 1*/}
+                <div className="section-row-container">
+                    <div className="timeline-box">
+                        <p>2015 - 2017</p>
+                    </div>
+                    <div className="experience-container">
+                        <div className="experience-title">
+                            <p>MSc. Mathematical Finance</p>
+                        </div>
+                        <div className="experience-paragraph">
+                            <p>Questrom Business School, Boston University.</p>
+                        </div>
+                    </div>
+                </div>
+                {/* Study Experience 2*/}
+                <div className="section-row-container">
+                    <div className="timeline-box">
+                        <p>JAN - MAY 2014</p>
+                    </div>
+                    <div className="experience-container">
+                        <div className="experience-title">
+                            <p>Dip.C++ Programming for Financial Engineering</p>
+                        </div>
+                        <div className="experience-paragraph">
+                            <p>Haas School of Business, University of California, Berkeley.</p>
+                        </div>
+                    </div>
+                </div>
+                {/* Study Experience 3*/}
+                <div className="section-row-container">
+                    <div className="timeline-box">
+                        <p>2011 - 2014</p>
+                    </div>
+                    <div className="experience-container">
+                        <div className="experience-title">
+                            <p>BSc(Hons). Investment & Financial Risk Management</p>
+                        </div>
+                        <div className="experience-paragraph">
+                            <p>Bayes Business School (formerly Cass), City University of London.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

@@ -3,10 +3,12 @@ import goVocayImage from '../../assets/images/GoVocay.png';
 import robinhoodCloneImage from '../../assets/images/RobinhoodClone.png';
 import simplyOptionsImage from '../../assets/images/SimplyOptions.png';
 import { HiOutlineExternalLink } from "react-icons/hi";
+import { FaGithub } from "react-icons/fa";
 
-const project1="A platform streamlining private share trading with secure API integrations. Built with React, Redux, Flask, PostgreSQL, OpenAI API, CrunchBase API and AWS S3."
-const project2="A trading simulation app offering dynamic graphs and themes(Dark vs. Light). Developed using React, Flask, PostgreSQL, and Redux."
-const project3="A booking platform for stays with seamless UX. Created with Express.js, HTML, CSS, Sequelize ORM, and PostgreSQL."
+
+const project1="A platform simplifying private share trading by providing users with secure access to essential data and streamlined transactions."
+const project2="An interactive trading simulation app featuring real-time data visualization and customizable themes for an engaging user experience."
+const project3="A user-friendly booking platform for accommodations, offering a seamless search and reservation experience."
 
 function Projects(){
     return (
@@ -17,7 +19,7 @@ function Projects(){
                 </div>
                 {/* Project 1*/}
                 <div className="section-row-container">
-                    <div className="screenshot-box" onClick={() => window.open('https://github.com/Mandeepan/SimplyOptions', '_blank', 'noopener,noreferrer')}>
+                    <div className="screenshot-box" >
                         <img src={simplyOptionsImage}></img>
                     </div>
                     <div className="experience-container">
@@ -38,11 +40,16 @@ function Projects(){
                             <p>OpenAI API</p>
                             <p>CrunchBase API</p>
                         </div>
+                        <div className="github-box" onClick={() => window.open('https://github.com/Mandeepan/SimplyOptions', '_blank', 'noopener,noreferrer')}>
+                            <a className="github-text">
+                                <FaGithub /> GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
                 {/* Project 2*/}
                 <div className="section-row-container">
-                    <div className="screenshot-box" onClick={() => window.open('https://github.com/Mandeepan/RobinhoodClone', '_blank', 'noopener,noreferrer')}>
+                    <div className="screenshot-box" >
                         <img src={robinhoodCloneImage}></img>
                     </div>
                     <div className="experience-container">
@@ -63,11 +70,16 @@ function Projects(){
                             <p>Pipenv</p>
                             <p>React-Chart</p>
                         </div>
+                        <div className="github-box" onClick={() => window.open('https://github.com/Mandeepan/RobinhoodClone', '_blank', 'noopener,noreferrer')}>
+                            <a className="github-text">
+                                <FaGithub /> GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
                 {/* Project 3*/}
                 <div className="section-row-container">
-                    <div className="screenshot-box" onClick={() => window.open('https://github.com/Mandeepan/API-project', '_blank', 'noopener,noreferrer')}>
+                    <div className="screenshot-box" >
                         <img src={goVocayImage}></img>
                     </div>
                     <div className="experience-container">
@@ -87,6 +99,11 @@ function Projects(){
                             <p>CSS</p>
                             <p>Node.JS</p>
                             <p>Git & Github</p>
+                        </div>
+                        <div className="github-box" onClick={() => window.open('https://github.com/Mandeepan/API-project', '_blank', 'noopener,noreferrer')}>
+                            <a className="github-text">
+                                <FaGithub /> GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
