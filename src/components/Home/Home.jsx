@@ -40,8 +40,8 @@ const Home = () => {
         <div className="header-text" aria-hidden="true">
           <p>Hi, my name is</p>
           <span className="glow-filter" data-text="Illuminated Glow Text.">Mandy Pan.</span>
-          <p>I am a full-stack software engineer,</p>
-          <p>with experience in Quantitative Finance and Fintech.</p>
+          <p>I am a hybrid Data & Software Professional,</p>
+          <p>with experience in FinTech and Quantitative Finance.</p>
         </div>
         <section className="buttons">
           <button onClick={() => setIsExperienceModalOpen(true)}>About Me</button>

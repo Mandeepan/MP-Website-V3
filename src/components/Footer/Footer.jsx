@@ -2,10 +2,12 @@
 import './Footer.css';
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
       <>
       <footer>
-        <p>&copy; 2024 Mandy Pan. All rights reserved.</p>
+        <p>&copy; {currentYear} Mandy Pan. All rights reserved.</p>
       </footer>
       </>
     );
