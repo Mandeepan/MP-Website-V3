@@ -39,8 +39,9 @@
 }
 
 .paragraph a:hover{
-    background-color: #edb3b3;
-    color: #0f0101;
+    /* background-color: #edb3b3; */
+    /* color: rgb(224, 211, 207);
+    filter: drop-shadow(0 0 2px #dbc7d7); */
 }
 
 .section-row-container{
