@@ -6,8 +6,9 @@ import profileImage from '../../assets/images/profile.jpg';
 import Modal from '../Modal/Modal';
 import Experience from "../Experience"
 import Projects from "../Projects"
-import { AiFillCaretRight } from "react-icons/ai";
-import { AiFillCaretLeft } from "react-icons/ai";
+// import { AiFillCaretRight } from "react-icons/ai";
+// import { AiFillCaretLeft } from "react-icons/ai";
+import { HiHome } from "react-icons/hi";
 
 
 
@@ -54,7 +55,7 @@ const Home = () => {
           >
             <Experience />
             <div className="left-modal-footer-container">
-            <button className="left-modal-close-button" onClick={() => setIsExperienceModalOpen(false)}>Back <AiFillCaretRight /></button>
+            <button className="left-modal-close-button" onClick={() => setIsExperienceModalOpen(false)}><HiHome /></button>
             </div>
           </Modal>
 
@@ -66,7 +67,7 @@ const Home = () => {
           >
             <Projects />
             <div className="right-modal-footer-container">
-              <button className="right-modal-close-button" onClick={() => setIsProjectsModalOpen(false)}><AiFillCaretLeft /> Back</button>
+              <button className="right-modal-close-button" onClick={() => setIsProjectsModalOpen(false)}><HiHome /></button>
             </div>
           </Modal>
         </section>
