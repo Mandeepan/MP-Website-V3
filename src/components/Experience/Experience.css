@@ -54,10 +54,10 @@
     padding:0 3rem;
 }
 
-.section-row-container:hover{
+/* .section-row-container:hover{
     background-color: rgba(60, 35, 14, 0.716);
     background-blend-mode: luminosity;
-}
+} */
 
 .timeline-box{
     display:contents;

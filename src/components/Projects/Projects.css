@@ -1,4 +1,8 @@
 
+.divider{
+    height: 4rem;
+}
+
 .screenshot-box{
     min-width:20rem;
     min-height: 8rem;
@@ -47,6 +51,10 @@
     text-decoration: none;
 }
 
+.project-name{
+    color:rgb(215, 185, 162);
+}
+
 .project-link:hover{
     color: rgb(215, 185, 162);
     filter:none;
@@ -56,6 +64,7 @@
 .github-text{
     font-size: small;
 }
+
 
 @media (max-width: 480px) {
     .screenshot-box{

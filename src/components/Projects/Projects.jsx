@@ -4,18 +4,18 @@ import robinhoodCloneImage from '../../assets/images/RobinhoodClone.png';
 import simplyOptionsImage from '../../assets/images/SimplyOptions.png';
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
-
+import OtherProjects from './Projects2' 
 
 const project1="A platform simplifying private share trading by providing users with secure access to essential data and streamlined transactions."
 const project2="An interactive trading simulation app featuring real-time data visualization and customizable themes for an engaging user experience."
 const project3="A user-friendly booking platform for accommodations, offering a seamless search and reservation experience."
 
-function Projects(){
+function SWEProjects(){
     return (
         <div className="modal-content-container">
             <div className="section-container" >
                 <div className='header'>
-                    <h3>PROJECTS</h3>
+                    <h3>SOFTWARE ENGINEERING</h3>
                 </div>
                 {/* Project 1*/}
                 <div className="section-row-container">
@@ -108,8 +108,9 @@ function Projects(){
                     </div>
                 </div>
             </div>
+            <OtherProjects />
         </div>
     )
 }
 
-export default Projects;
+export default SWEProjects;
