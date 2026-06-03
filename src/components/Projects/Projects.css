@@ -12,13 +12,24 @@
     padding-top:0;
     flex-shrink: 0;
     margin-right:2rem;
-    overflow: hidden; 
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow:
+        0 4px 24px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(238, 200, 175, 0.08);
 }
 
 .screenshot-box img{
     width:100%;
     height:100%;
     object-fit: cover;
+    border-radius: 14px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.screenshot-box:hover img {
+    transform: scale(1.03);
+    opacity: 0.9;
 }
 
 
@@ -32,17 +43,20 @@
 }
 
 .skill-tabs p{
-    font-family:'Roboto', sans-serif;
-    font-size:small;
+    /* Skill tags keep monospace — short labels, technical feel */
+    font-family: var(--font-mono, 'SF Mono', 'Fira Code', monospace);
+    font-size: 0.7rem;
     word-wrap:none;
-    overflow-wrap: anywhere; 
-    margin-right:1rem;
+    overflow-wrap: anywhere;
+    margin-right:0.6rem;
     margin-top:0.5rem;
-    height:1.5rem;
-    padding:0.25rem;
-    border-radius: 0.5rem;
-    color:white;
-    background: rgb(134, 126, 121);
+    height: auto;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.4rem;
+    color: rgba(238, 200, 175, 0.85);
+    background: rgba(134, 126, 121, 0.25);
+    border: 1px solid rgba(238, 200, 175, 0.12);
+    letter-spacing: 0.04em;
 }
 
 .project-link{

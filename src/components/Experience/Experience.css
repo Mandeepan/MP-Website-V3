@@ -2,6 +2,14 @@
     overflow-y: scroll;
 }
 
+/* About Me panel — vertically centre only */
+.about-me-container {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    overflow-y: auto;
+}
+
 .section-container{
     display: flex;
     flex-direction: column;
@@ -22,13 +30,28 @@
 
 .paragraph, .timeline-box, .experience-paragraph{
     color: rgb(190, 164, 164);
-    font-family:'Roboto', sans-serif;
-    font-size:large;
+    font-family: var(--font-body, 'Inter', system-ui, sans-serif);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    font-weight: 300;
+    letter-spacing: 0.01em;
 }
 
+/* Section headings — keep monospace for the technical identity */
+.section-container > .header h3 {
+    font-family: var(--font-mono, 'SF Mono', monospace);
+    letter-spacing: 0.12em;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Job/role title — Inter medium weight, slightly larger */
 .experience-title{
-    font-family:'Roboto', sans-serif;
-    font-size:large;
+    font-family: var(--font-body, 'Inter', system-ui, sans-serif);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
 }
 
 
@@ -107,8 +130,8 @@
 
     .paragraph, .timeline-box, .experience-paragraph{
         color: rgb(190, 164, 164);
-        font-family:'Roboto', sans-serif;
-        font-size:medium;
+        font-family: var(--font-body, 'Inter', system-ui, sans-serif);
+        font-size: 0.85rem;
     }
 
     .section-row-container{

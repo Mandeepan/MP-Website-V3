@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+/* ── Design tokens ── */
+:root {
+  --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --color-text:    #c8c2bd;
+  --color-muted:   rgb(190, 164, 164);
+  --color-accent:  rgba(238, 200, 175, 0.85);
+}
 
 * {
   box-sizing: border-box;

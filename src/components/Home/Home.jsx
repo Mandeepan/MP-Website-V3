@@ -1,40 +1,13 @@
-
 import './Home.css';
-import { useState} from 'react'
-// import { useNavigate } from 'react-router-dom';
 import profileImage from '../../assets/images/profile.jpg';
-import Modal from '../Modal/Modal';
-import Experience from "../Experience"
-import Projects from "../Projects"
-// import { AiFillCaretRight } from "react-icons/ai";
-// import { AiFillCaretLeft } from "react-icons/ai";
-import { HiHome } from "react-icons/hi";
-
-
-
-
-
-const socialIcons={
-  linkedIn: "linkedin-icon.svg",
-  github:"github-icon.svg",
-  email:"email-icon.svg",
-  medium:"medium-icon.svg",
-  twitter:"twitter-icon.svg"
-}
+import { FaLinkedin, FaGithub, FaMedium } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import { HiMail } from 'react-icons/hi';
 
 const Home = () => {
-  // const navigate = useNavigate();
-  const [isExperienceModalOpen, setIsExperienceModalOpen] = useState(false);
-  const [isProjectsModalOpen, setIsProjectsModalOpen] = useState(false);
-
-
   return (
-    <div>
+    <div className="home-panel-inner">
       <main>
-        <div className="bg">
-          <div></div>
-          <div></div>
-        </div>
         <section className="profile-section">
           <img src={profileImage} alt="Profile Picture" className="profile-pic" />
         </section>
@@ -44,51 +17,24 @@ const Home = () => {
           <p>I am a hybrid Data & Software Professional,</p>
           <p>with experience in FinTech and Quantitative Finance.</p>
         </div>
-        <section className="buttons">
-          <button onClick={() => setIsExperienceModalOpen(true)}>About Me</button>
-          <button onClick={() => setIsProjectsModalOpen(true)}>Projects</button>
-          {/* Experience Modal - Slides from Left */}
-          <Modal
-            isOpen={isExperienceModalOpen}
-            onClose={() => setIsExperienceModalOpen(false)}
-            direction="left"
-          >
-            <Experience />
-            <div className="left-modal-footer-container">
-            <button className="left-modal-close-button" onClick={() => setIsExperienceModalOpen(false)}><HiHome /></button>
-            </div>
-          </Modal>
-
-          {/* Projects Modal - Slides from Right */}
-          <Modal
-            isOpen={isProjectsModalOpen}
-            onClose={() => setIsProjectsModalOpen(false)}
-            direction="right"
-          >
-            <Projects />
-            <div className="right-modal-footer-container">
-              <button className="right-modal-close-button" onClick={() => setIsProjectsModalOpen(false)}><HiHome /></button>
-            </div>
-          </Modal>
-        </section>
         <section className="social-links">
           <a href="https://www.linkedin.com/in/mandycpan/" target="_blank" aria-label="LinkedIn" rel="noreferrer">
-            <img src={socialIcons.linkedIn} alt="LinkedIn" className="social-icon" />
+            <FaLinkedin className="social-icon" />
           </a>
           <a href="https://github.com/Mandeepan" target="_blank" aria-label="GitHub" rel="noreferrer">
-            <img src={socialIcons.github} alt="GitHub" className="social-icon" />
+            <FaGithub className="social-icon" />
           </a>
-          <a href="https://x.com/MandyPoonCM" target="_blank" aria-label="Twitter" rel="noreferrer">
-            <img src={socialIcons.twitter} alt="Twitter" className="social-icon" />
+          <a href="https://x.com/MandyPoonCM" target="_blank" aria-label="Twitter / X" rel="noreferrer">
+            <FaXTwitter className="social-icon" />
           </a>
           <a href="https://medium.com/@mandyphc" target="_blank" aria-label="Medium" rel="noreferrer">
-            <img src={socialIcons.medium} alt="Medium" className="social-icon" />
+            <FaMedium className="social-icon" />
           </a>
           <a href="mailto:imandypan@gmail.com" aria-label="Send an email to Mandy Pan">
-            <img src={socialIcons.email} alt="Email icon" className="social-icon" />
+            <HiMail className="social-icon" />
           </a>
         </section>
-      </main> 
+      </main>
     </div>
   );
 };

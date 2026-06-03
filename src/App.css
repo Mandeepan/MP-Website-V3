@@ -1,0 +1,20 @@
+/* Side panel wrapper — wraps Experience / Projects panels */
+.side-panel-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #0f0101;
+}
+
+/* Thin top label bar */
+.side-panel-label {
+  flex-shrink: 0;
+  padding: 1rem 2rem 0.5rem;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(238, 200, 175, 0.45);
+  border-bottom: 1px solid rgba(238, 200, 175, 0.08);
+}
