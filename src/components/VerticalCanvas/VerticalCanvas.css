@@ -5,6 +5,10 @@
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
+  /* iOS safe area — prevents content sitting behind the notch/dynamic island */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* ── Animated floating orb background ── */
@@ -151,12 +155,15 @@
 .vcanvas-panel {
   width: 100vw;
   height: 100vh;
+  height: 100dvh; /* dynamic viewport height — adjusts when mobile browser chrome shows/hides */
   flex-shrink: 0;
   overflow-y: auto;
   overflow-x: hidden;
-  touch-action: pan-x; /* allow vertical drag on track but horizontal scroll inside */
+  touch-action: pan-y;
   position: relative;
   z-index: 1;
+  overscroll-behavior: contain; /* prevent elastic bounce from revealing background behind panel */
+  -webkit-overflow-scrolling: touch; /* smooth momentum scroll on iOS */
 }
 
 /* ── Vertical dot nav — right edge ── */
@@ -184,6 +191,15 @@
 .vcanvas-dot--active {
   background: var(--dot-active);
   transform: scale(1.35);
+}
+
+/* Pill shape when active panel has more content to scroll */
+.vcanvas-dot--has-more {
+  transform: none;
+  height: 22px;
+  border-radius: 4px;
+  transition: height 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-radius 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .vcanvas-dot:hover {
   background: var(--dot-hover);

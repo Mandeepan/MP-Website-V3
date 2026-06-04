@@ -1,6 +1,11 @@
 /* Footer Styling */
+footer {
+    padding: 1rem 0;
+    flex-shrink: 0;
+}
+
 footer p {
     font-size: 0.6rem;
     color: #888;
     text-align: center;
-  }
+}

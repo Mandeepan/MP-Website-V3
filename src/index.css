@@ -44,6 +44,15 @@
   padding: 0;
 }
 
+/* Hide scrollbars everywhere — dot nav replaces them */
+* {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE / Edge */
+}
+*::-webkit-scrollbar {
+  display: none;                /* Chrome / Safari / mobile WebKit */
+}
+
 html, body {
     height: 100%;
     overflow: hidden;

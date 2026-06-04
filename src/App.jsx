@@ -20,8 +20,8 @@ const PANEL_LABELS = [
 ];
 
 const LastPanel = () => (
-  <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
-    <div style={{ flex: 1, overflowY: 'auto' }}>
+  <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0 }}>
+    <div style={{ flex: 1, overflowY: 'auto', minHeight: 0 }}>
       <DataProjects />
     </div>
     <Footer />
