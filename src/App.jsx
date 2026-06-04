@@ -7,6 +7,8 @@ import SWEProjects from './components/Projects';
 import DataProjects from './components/Projects/Projects2';
 import Footer from './components/Footer';
 import NotFoundPage from './components/NotFoundPage';
+import MusicToggle from './components/MusicToggle/MusicToggle';
+import ThemeToggle from './components/ThemeToggle/ThemeToggle';
 import './App.css';
 
 const PANEL_LABELS = [
@@ -52,6 +54,8 @@ const router = createBrowserRouter([
 
 const App = () => (
   <div>
+    <MusicToggle src="/ambient.mp3" />
+    <ThemeToggle />
     <RouterProvider router={router} />
   </div>
 );

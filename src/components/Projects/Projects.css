@@ -59,10 +59,26 @@
     letter-spacing: 0.04em;
 }
 
+[data-theme="light"] .skill-tabs p {
+    color: #7a3a18;
+    background: rgba(120, 60, 20, 0.1);
+    border: 1px solid rgba(120, 60, 20, 0.2);
+}
+
 .project-link{
     color:rgb(224, 211, 207);
     filter: drop-shadow(0 0 2px #ffae00);
     text-decoration: none;
+}
+
+[data-theme="light"] .project-link {
+    color: #7a3a18;
+    filter: none;
+}
+
+[data-theme="light"] .project-link:hover {
+    color: #4a1e08;
+    filter: none;
 }
 
 .project-name{
