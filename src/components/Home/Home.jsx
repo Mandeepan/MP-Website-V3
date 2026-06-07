@@ -9,14 +9,32 @@ const Home = () => {
     <div className="home-panel-inner">
       <main>
         <section className="profile-section">
-          <img src={profileImage} alt="Profile Picture" className="profile-pic" />
+          <img src={profileImage} alt="Mandy Pan" className="profile-pic" />
         </section>
-        <div className="header-text" aria-hidden="true">
-          <p>Hi, my name is</p>
-          <span className="glow-filter" data-text="Illuminated Glow Text.">Mandy Pan.</span>
-          <p>I am a hybrid Data & Software Professional,</p>
-          <p>with experience in FinTech and Quantitative Finance.</p>
+
+        <div className="header-text">
+          <p className="greeting">Hi, I&apos;m</p>
+          <h1 className="name glow-filter">Mandy Pan.</h1>
+          <p className="headline">Two skill sets that rarely live in one person: <strong>a capital markets brain</strong> and <strong>builder&apos;s hands</strong>.</p>
+          <p className="positioning">
+            I structure asset-based finance and ship the systems that run it.
+          </p>
+          <ul className="metrics">
+            <li>
+              <span className="metric-value">$600M+</span>
+              <span className="metric-label">capital raised</span>
+            </li>
+            <li>
+              <span className="metric-value">&lt;2%</span>
+              <span className="metric-label">cash forecast variance</span>
+            </li>
+            <li>
+              <span className="metric-value">80%</span>
+              <span className="metric-label">faster risk assessment</span>
+            </li>
+          </ul>
         </div>
+
         <section className="social-links">
           <a href="https://www.linkedin.com/in/mandycpan/" target="_blank" aria-label="LinkedIn" rel="noreferrer">
             <FaLinkedin className="social-icon" />
