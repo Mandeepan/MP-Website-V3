@@ -15,7 +15,7 @@ const Home = () => {
         <div className="header-text">
           <p className="greeting">Hi, I&apos;m</p>
           <h1 className="name glow-filter">Mandy Pan.</h1>
-          <p className="headline">Two skill sets that rarely live in one person: <strong>a capital markets brain</strong> and <strong>builder&apos;s hands</strong>.</p>
+          <p className="headline">2 skill sets that rarely live in 1 person: <strong>a capital markets brain</strong> & <strong>builder&apos;s hands</strong>.</p>
           <p className="positioning">
             I structure asset-based finance and ship the systems that run it.
           </p>
