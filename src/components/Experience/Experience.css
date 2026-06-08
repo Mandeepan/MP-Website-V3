@@ -55,10 +55,29 @@
 }
 
 
-.paragraph a{
+.paragraph a.keyword-link {
     color: var(--color-link);
     filter: drop-shadow(0 0 2px #ffae00);
     text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+
+[data-theme="light"] .paragraph a.keyword-link {
+    filter: none;
+    font-weight: 600;
+}
+
+.paragraph a.company-link {
+    color: var(--color-link);
+    text-decoration: underline;
+    font-weight: inherit;
+    filter: none;
+    cursor: pointer;
+}
+
+[data-theme="light"] .paragraph a.company-link {
+    color: var(--color-text);
 }
 
 /* .paragraph a:hover{ */

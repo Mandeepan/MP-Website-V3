@@ -8,16 +8,16 @@ function AboutMe() {
                     <h3>ABOUT ME</h3>
                 </div>
                 <div className="paragraph">
-                    <p>Hi, I&apos;m Mandy! I&apos;m a hybrid Data & Software Engineer with a unique blend of expertise in quantitative analytics and a passion for creating innovative FinTech solutions. My focus lies at the intersection of <a className="keyword-link">developing impactful software applications, building systematic, data-driven processes, and generating strategic data insights</a>.</p>
+                    <p>Hi, I&apos;m Mandy. I work at the intersection of <a className="keyword-link">capital strategy</a> and <a className="keyword-link">automation</a>, blending <a className="keyword-link">structured finance</a>, <a className="keyword-link">treasury</a>, and <a className="keyword-link">engineering</a> together. My focus spans structuring <a className="keyword-link">asset-based and M&A deals</a> with data, automating <a className="keyword-link">lender compliance reporting</a>, owning <a className="keyword-link">capital allocation and forecasting</a>, and building the tools that <a className="keyword-link">maximize margin and liquidity</a>.</p>
                 </div>
                 <div className="paragraph">
-                    <p>Previously, at DailyPay and Quant Global Capital Advisors, I honed my analytical and engineering acumen by creating <a className="keyword-link">data-driven systems for structured finance</a>, evaluating new product features with <a className="keyword-link">cross-functional</a> teams, and developing <a className="keyword-link">machine learning-powered trading strategies</a>.</p>
+                    <p>Most recently at <a className="company-link" href="https://www.getparker.com" target="_blank" rel="noreferrer">Parker</a>, I built a <a className="keyword-link">liquidity forecast model with less than 2% variance</a> across SPV structures and payment rails, and automated a <a className="keyword-link">compliance reporting pipeline</a> that removed a full manual workload. At <a className="company-link" href="https://www.dailypay.com" target="_blank" rel="noreferrer">DailyPay</a>, I helped secure <a className="keyword-link">$600M+ in funding</a> and automated <a className="keyword-link">ABL collateral pool evaluation</a>, working closely with <a className="keyword-link">cross-functional teams</a> to manage credit risks and improve margin by changing product operations.</p>
                 </div>
                 <div className="paragraph">
-                    <p>My recent projects, including a Robinhood Clone and SimplyOptions, further demonstrate my technical proficiency across <a className="keyword-link">Python, SQL, JavaScript, React, Flask, and Redux</a>, complemented by my knowledge in <a className="keyword-link">leveraging APIs for efficient data integration, and utilizing updated LLM models</a>. I am currently working on building an AI Agent to extract unstructured data.</p>
+                    <p>The technical side is what makes the finance work scale. I build in <a className="keyword-link">Python and SQL</a>, with <a className="keyword-link">Snowflake and AWS</a>, and use <a className="keyword-link">APIs and Claude Code</a> to turn manual processes into efficient systems.</p>
                 </div>
                 <div className="paragraph">
-                    <p>Outside of work, I enjoy badminton, hiking, exploring museums, and experimenting with new recipes.</p>
+                    <p>Outside of work, I enjoy Chinese chess, badminton, modern art, opera, and experimenting with new cooking recipes.</p>
                 </div>
             </div>
         </div>

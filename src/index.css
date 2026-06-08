@@ -10,7 +10,7 @@
   --color-muted:    rgb(190, 164, 164);
   --color-accent:   rgba(238, 200, 175, 0.85);
   --color-heading:  #eedee0;
-  --color-link:     rgb(224, 211, 207);
+  --color-link:     rgb(224, 217, 207);
 
   --dot-idle:       rgba(238, 200, 175, 0.25);
   --dot-active:     rgba(238, 200, 175, 0.9);
@@ -43,6 +43,10 @@
   margin: 0;
   padding: 0;
 }
+
+/* ── Cursor — pointer only on real interactive elements ── */
+* { cursor: default; }
+a[href], button, [role="button"] { cursor: pointer; }
 
 /* Hide scrollbars everywhere — dot nav replaces them */
 * {
