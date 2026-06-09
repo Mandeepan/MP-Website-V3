@@ -30,6 +30,9 @@ const VerticalCanvas = ({ panels, labels }) => {
         y: getY(clamped),
         transition: { type: 'spring', stiffness: 280, damping: 38 },
       });
+      // Reset destination panel scroll to top so you always land at the beginning
+      const el = panelRefs.current[clamped];
+      if (el) el.scrollTop = 0;
       if (!hasInteracted) setHasInteracted(true);
     },
     [controls, getY, hasInteracted, PANEL_COUNT]
@@ -54,7 +57,7 @@ const VerticalCanvas = ({ panels, labels }) => {
       scrollLock.current = true;
       if (delta > 0) goToPanel(currentPanelRef.current + 1);
       else           goToPanel(currentPanelRef.current - 1);
-      setTimeout(() => { scrollLock.current = false; }, 700);
+      setTimeout(() => { scrollLock.current = false; }, 900);
     };
     window.addEventListener('wheel', handleWheel, { passive: true });
     return () => window.removeEventListener('wheel', handleWheel);
