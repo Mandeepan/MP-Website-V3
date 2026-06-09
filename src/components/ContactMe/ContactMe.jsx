@@ -119,7 +119,7 @@ function ContactMe() {
             type="submit"
             disabled={status === 'sending'}
           >
-            {status === 'sending' ? 'Sending…' : 'Send message'}
+            {status === 'sending' ? 'Sending…' : 'Send Message'}
           </button>
         </form>
       )}

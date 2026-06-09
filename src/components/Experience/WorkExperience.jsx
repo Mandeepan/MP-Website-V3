@@ -4,7 +4,7 @@ import './Experience.css';
 const entries = [
   {
     title: "Capital Markets & Treasury Director",
-    company: "Parker Group",
+    company: "Parker",
     period: "2025 – 2026",
     summary: "Owned capital strategy and the systems behind it, including a cash forecast model within 2% variance and a compliance pipeline that removed a full manual workload.",
     tags: ["Python", "SQL", "Snowflake", "Retool", "ABL", "M&A"],
