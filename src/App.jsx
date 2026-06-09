@@ -4,6 +4,7 @@ import Home from './components/Home';
 import AboutMe from './components/Experience/AboutMe';
 import WorkExperience from './components/Experience/WorkExperience';
 import Projects from './components/Projects/Projects';
+import ContactMe from './components/ContactMe/ContactMe';
 import Footer from './components/Footer';
 import NotFoundPage from './components/NotFoundPage';
 import MusicToggle from './components/MusicToggle/MusicToggle';
@@ -15,12 +16,21 @@ const PANEL_LABELS = [
   'About Me',
   'Journey',
   'Projects',
+  'Contact',
 ];
 
 const ProjectsPanel = () => (
   <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0 }}>
     <div style={{ flex: 1, overflowY: 'auto', minHeight: 0 }}>
       <Projects />
+    </div>
+  </div>
+);
+
+const ContactPanel = () => (
+  <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0 }}>
+    <div style={{ flex: 1, overflowY: 'auto', minHeight: 0 }}>
+      <ContactMe />
     </div>
     <Footer />
   </div>
@@ -34,6 +44,7 @@ const CanvasPage = () => (
       <AboutMe key="about" />,
       <WorkExperience key="work" />,
       <ProjectsPanel key="projects" />,
+      <ContactPanel key="contact" />,
     ]}
   />
 );

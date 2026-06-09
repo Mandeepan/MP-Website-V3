@@ -1,0 +1,192 @@
+.contact-panel {
+    padding: 3rem 5% 3rem;
+    max-width: 640px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-eyebrow {
+    font-family: var(--font-mono, 'SF Mono', monospace);
+    letter-spacing: 0.12em;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin: 0 0 0.6rem;
+}
+
+.contact-heading {
+    font-family: var(--font-mono, 'SF Mono', monospace);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-heading);
+    margin: 0 0 0.75rem;
+    letter-spacing: 0.02em;
+}
+
+.contact-sub {
+    font-family: var(--font-body, 'Inter', sans-serif);
+    font-size: 0.92rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--color-muted);
+    margin: 0 0 2rem;
+    max-width: 480px;
+}
+
+/* ── Form layout ── */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    text-align: left;
+}
+
+.contact-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.contact-label {
+    font-family: var(--font-mono, 'SF Mono', monospace);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: var(--color-muted);
+    text-transform: uppercase;
+}
+
+.contact-input,
+.contact-textarea {
+    font-family: var(--font-body, 'Inter', sans-serif);
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--color-text);
+    background: rgba(238, 200, 175, 0.04);
+    border: 1px solid rgba(238, 200, 175, 0.15);
+    border-radius: 10px;
+    padding: 0.65rem 0.9rem;
+    outline: none;
+    transition: border-color 0.18s ease, background 0.18s ease;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+    color: rgba(200, 194, 189, 0.35);
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+    border-color: rgba(238, 200, 175, 0.45);
+    background: rgba(238, 200, 175, 0.07);
+}
+
+/* ── Submit button ── */
+.contact-submit {
+    align-self: center;
+    font-family: var(--font-mono, 'SF Mono', monospace);
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    color: #1a1206;
+    background: rgba(238, 200, 175, 0.85);
+    border: none;
+    border-radius: 999px;
+    padding: 0.65rem 1.8rem;
+    transition: background 0.18s ease, opacity 0.18s ease;
+    cursor: pointer;
+}
+
+.contact-submit:hover {
+    background: rgba(238, 200, 175, 1);
+}
+
+.contact-submit:disabled {
+    opacity: 0.55;
+    cursor: default;
+}
+
+/* ── Success state ── */
+.contact-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.contact-success__icon {
+    font-size: 2rem;
+    color: rgba(238, 200, 175, 0.85);
+}
+
+.contact-success p {
+    font-family: var(--font-body, 'Inter', sans-serif);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color-muted);
+}
+
+/* ── Error message ── */
+.contact-error {
+    font-family: var(--font-mono, 'SF Mono', monospace);
+    font-size: 0.75rem;
+    color: rgba(255, 120, 100, 0.85);
+    margin: 0;
+}
+
+/* ── Light theme ── */
+[data-theme="light"] .contact-input,
+[data-theme="light"] .contact-textarea {
+    color: var(--color-text);
+    background: rgba(80, 45, 20, 0.03);
+    border-color: rgba(80, 45, 20, 0.15);
+}
+
+[data-theme="light"] .contact-input:focus,
+[data-theme="light"] .contact-textarea:focus {
+    border-color: rgba(80, 45, 20, 0.4);
+    background: rgba(80, 45, 20, 0.06);
+}
+
+[data-theme="light"] .contact-submit {
+    color: #fff;
+    background: #7a3a18;
+}
+
+[data-theme="light"] .contact-submit:hover {
+    background: #5c2910;
+}
+
+[data-theme="light"] .contact-success__icon {
+    color: #7a3a18;
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+    .contact-panel {
+        padding: 2rem 4%;
+    }
+
+    .contact-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-submit {
+        align-self: center;
+    }
+}
