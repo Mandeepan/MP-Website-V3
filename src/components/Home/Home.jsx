@@ -3,8 +3,12 @@ import profileImage from '../../assets/images/profile.jpg';
 import { FaLinkedin, FaGithub, FaMedium } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { HiMail } from 'react-icons/hi';
+import { useNavigation } from '../NavigationContext';
+
+const CONTACT_PANEL_INDEX = 4;
 
 const Home = () => {
+  const { goToPanel } = useNavigation() ?? {};
   return (
     <div className="home-panel-inner">
       <main>
@@ -48,9 +52,13 @@ const Home = () => {
           <a href="https://medium.com/@mandyphc" target="_blank" aria-label="Medium" rel="noreferrer">
             <FaMedium className="social-icon" />
           </a>
-          <a href="mailto:imandypan@gmail.com" aria-label="Send an email to Mandy Pan">
+          <button
+            className="social-icon-btn"
+            aria-label="Contact Mandy"
+            onClick={() => goToPanel?.(CONTACT_PANEL_INDEX)}
+          >
             <HiMail className="social-icon" />
-          </a>
+          </button>
         </section>
       </main>
     </div>

@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
+import { NavigationContext } from '../NavigationContext';
 import './VerticalCanvas.css';
 
 const INITIAL_PANEL = 0;
@@ -112,6 +113,7 @@ const VerticalCanvas = ({ panels, labels }) => {
   }, [controls, getY]);
 
   return (
+    <NavigationContext.Provider value={{ goToPanel }}>
     <div
       className="vcanvas-outer"
       onTouchStart={handleTouchStart}
@@ -162,6 +164,7 @@ const VerticalCanvas = ({ panels, labels }) => {
         </div>
       )}
     </div>
+    </NavigationContext.Provider>
   );
 };
 
