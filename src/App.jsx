@@ -3,8 +3,7 @@ import VerticalCanvas from './components/VerticalCanvas/VerticalCanvas';
 import Home from './components/Home';
 import AboutMe from './components/Experience/AboutMe';
 import WorkExperience from './components/Experience/WorkExperience';
-import SWEProjects from './components/Projects';
-import DataProjects from './components/Projects/Projects2';
+import Projects from './components/Projects/Projects';
 import Footer from './components/Footer';
 import NotFoundPage from './components/NotFoundPage';
 import MusicToggle from './components/MusicToggle/MusicToggle';
@@ -14,15 +13,14 @@ import './App.css';
 const PANEL_LABELS = [
   'Home',
   'About Me',
-  'Experience & Education',
-  'Software Engineering',
-  'Data Analytics & Quant',
+  'Journey',
+  'Projects',
 ];
 
-const LastPanel = () => (
+const ProjectsPanel = () => (
   <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0 }}>
     <div style={{ flex: 1, overflowY: 'auto', minHeight: 0 }}>
-      <DataProjects />
+      <Projects />
     </div>
     <Footer />
   </div>
@@ -35,8 +33,7 @@ const CanvasPage = () => (
       <Home key="home" />,
       <AboutMe key="about" />,
       <WorkExperience key="work" />,
-      <SWEProjects key="swe" />,
-      <LastPanel key="data" />,
+      <ProjectsPanel key="projects" />,
     ]}
   />
 );
