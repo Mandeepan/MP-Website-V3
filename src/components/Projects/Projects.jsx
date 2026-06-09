@@ -110,9 +110,6 @@ function Projects() {
     <div className="projects-panel">
       <div className="projects-header">
         <h3 className="projects-eyebrow">PROJECTS</h3>
-        {/* <p className="projects-subheading">
-          Capital markets and automation work, plus selected quant and software builds.
-        </p> */}
       </div>
 
       <div className="projects-filters" role="group" aria-label="Filter projects by category">
